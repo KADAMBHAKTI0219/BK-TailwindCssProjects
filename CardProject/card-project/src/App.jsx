@@ -9,9 +9,9 @@ function App() {
 
   return (
     <>
-      {/* <CardLayout/>
-      <CardGrid/> */}
-      <MasonryLayout/>
+      <CardLayout/>
+      {/* <CardGrid/>
+      <MasonryLayout/> */}
     </>
   )
 }

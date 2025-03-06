@@ -1,7 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BsFillStopwatchFill } from "react-icons/bs";
 import { FaComment } from "react-icons/fa";
+
 const CardLayout = () => {
+  const [darkmode, setDarkmode] = useState(() => {
+    return localStorage.getItem("theme") === "dark" || 
+      (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  });
+
+  useEffect(() => {
+    if (darkmode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkmode]);
   const cardData = [
     {
       title: "Simplest Salad Recipe Ever",
@@ -85,37 +100,55 @@ const CardLayout = () => {
       }
   ];
   return (
-    <div>
-      <div className="flex flex-wrap justify-between p-0 mx-5 sm:mx-20 md:mx-5 lg:p-10 lg:mx-10">
+    <div className="p-5">
+      <button
+        onClick={()=>setDarkmode(!darkmode)}
+        className="px-4 py-2 rounded bg-gray-200 dark:bg-black text-black dark:text-white"
+      >
+        {darkmode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+      </button>
+
+      <div className="min-h-screen bg-pink-400 text-black dark:bg-blue-950 dark:text-white">
+<h1>
+  roman reings
+</h1>
+   </div>
+
+      {/* <div className="flex flex-wrap justify-between p-0 mx-5 sm:mx-20 md:mx-5 lg:p-10 lg:mx-10">
         {cardData.map((card, index) => (
-         <div className="card sm:[320px]  md:w-[420px] lg:w-[420px] xl:w-[420px]  border-2 mx-auto my-10 sm:my-8 md:m-auto md:my-10 lg:my-10 xl:my-10 shadow-2xl rounded relative"
-         key={index}> 
+          <div
+            className="card sm:w-[320px] md:w-[420px] lg:w-[420px] xl:w-[420px] border-2 mx-auto my-8 shadow-2xl rounded relative"
+            key={index}
+          >
             <div>
-         <div className="card-image h-50 sm:h-60 md:h-70 lg:h-60 relative w-vw">
-           <img src={card.image} alt="" className="h-full w-full rounded-t object-fill object-center" />
-           <div className="absolute top-5 right-5 px-3 py-2 lg:px-5 lg:py-2 bg-indigo-700 text-white text-sm">
-             {card.tag}
-           </div>
-         </div>
-         <div className="card-content pt-10 px-10 pb-22">
-           <strong className="text-xl">{card.title}</strong>
-           <p className="text-sm text-gray-500 py-2">{card.description}</p>
-         </div>
-         
+              <div className="card-image h-60 relative w-full">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="h-full w-full rounded-t object-cover"
+                />
+                <div className="absolute top-5 right-5 px-3 py-2 bg-indigo-700 text-white text-sm">
+                  {card.tag}
+                </div>
+              </div>
+              <div className="card-content pt-10 px-10 pb-22">
+                <strong className="text-xl">{card.title}</strong>
+                <p className="text-sm text-gray-500 py-2">{card.description}</p>
+              </div>
             </div>
-            <div className="card-footer flex justify-between w-full bg-gray-100  absolute bottom-0 rounded-b py-4 px-4">
-             <div className="flex items-center justify-between">
-                 <BsFillStopwatchFill />
-                 <div className="px-2">{card.time}</div>
-             </div>
-             <div className="flex items-center">
-                 <div><FaComment /></div>
-                 <div className="px-2">Comments</div>
-             </div>
-         </div>
-        </div>
+            <div className="card-footer flex justify-between w-full bg-gray-100 absolute bottom-0 rounded-b py-4 px-4">
+              <div className="flex items-center">
+                <BsFillStopwatchFill />
+                <div className="px-2">{card.time}</div>
+              </div>
+              <div className="flex items-center">
+                <FaComment />
+                <div className="px-2">Comments</div>
+              </div>
+            </div>
+          </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

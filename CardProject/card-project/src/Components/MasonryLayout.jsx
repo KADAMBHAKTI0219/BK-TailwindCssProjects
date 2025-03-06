@@ -31,7 +31,7 @@ const MasonryLayout = () => {
     
       return (
         <div className="p-8 ">
-          <div className="sm:columns-1 md:columns-3 lg:columns-3 gap-7">
+          <div className="sm:columns-1 md:columns-3 lg:rows-3 gap-7">
             {data.map((item,index) => (
               <div key={item.index}
                 className={`mb-4 ${item.height} ${item.bg} text-white rounded-lg  shadow-2xl flex items-center justify-center`}
