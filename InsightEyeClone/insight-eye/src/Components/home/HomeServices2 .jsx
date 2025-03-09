@@ -5,8 +5,8 @@ import Button from '../../cva/Button'
 
 const HomeServices2  = () => {
   return (
-    <div className='max-w-7xl bg-gray-200 '>
-        <div className='relative '>
+    <div className='max-w-7xl h-[120vh] relative'>
+        <div className=' relative'>
         <div className="w-96 h-96 border-gray-100 border-[50px] rounded-full absolute -top-20 -left-10 -z-50">
             <div>
                 <img src={aboutThumb} alt="" className='absolute bottom-10 right-10'/>

@@ -5,6 +5,8 @@ import HomeService from '../Components/home/HomeService'
 import LogoSlider from '../Components/home/LogoSlider'
 import HomeServices2 from '../Components/home/HomeServices2 '
 import HomeVideo from '../Components/home/HomeVideo'
+import HomeTestimonials from '../Components/home/HomeTestimonials'
+import HomeInvestigator from '../Components/home/HomeInvestigator'
 
 const HomePage = () => {
   return (
@@ -15,6 +17,8 @@ const HomePage = () => {
       <LogoSlider/>
       <HomeServices2/>
       <HomeVideo/>
+      <HomeTestimonials/>
+      <HomeInvestigator/>
     </div>
   )
 }

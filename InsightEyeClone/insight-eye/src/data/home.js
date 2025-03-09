@@ -11,6 +11,7 @@ import logo5 from '../Images/Home/logo5.png';
 import  icons1 from '../Images/Home/icons1.svg'
 import icons2 from '../Images/Home/icons2.svg'
 import icons3 from '../Images/Home/icons3.svg'
+import author1 from '../Images/Home/author1.png'
 
 
 
@@ -104,4 +105,20 @@ export const ServiceIcon = [
         title:'Expert Investigator Agents'
     }
 
+]
+
+export const homeTestimonial = [
+    {
+        id:1,
+        image: author1,
+        author:'Ronald Richards',
+        designation:'Service taker',
+        description:"“The private investigator should provide value for the client investment. They should be cost-effective and efficient.”"
+    },{
+        id:2,
+        image: author1,
+        author:'Ronald Richards',
+        designation:'Service taker',
+        description:"“The private investigator should provide value for the client investment. They should be cost-effective and efficient.”"
+    }
 ]

@@ -11,8 +11,7 @@ const buttonVariants = cva(
       variant: {
         primary: "bg-customGradient text-white hover:bg-customGradient2 text-lg",
         secondary: "bg-white  text-black hover:bg-customGradient shadow-lg text-lg transition-all duration-500 ease-in-out hover:text-white ",
-        header: "bg-theme  font-medium   text-white rounded-[4px] ",
-        reverse: "text-theme  font-bold border rounded-[4px] border-theme   hover:bg-theme hover:text-white ", 
+        roundedButton: "bg-customGradient font-bold text-white rounded-full",
       },
 
       disableHoverOnGroup: {
@@ -23,7 +22,9 @@ const buttonVariants = cva(
         sm: "px-3 py-1 lg:py-3  text-sm",
         md: "w-48 h-14",
         lg: "w-52 h-14 ",
+        roundSm:'w-32 h-32'
       },
+
     },
     defaultVariants: {
       variant: "primary",
