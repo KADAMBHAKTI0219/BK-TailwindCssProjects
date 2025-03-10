@@ -42,20 +42,20 @@ const HomeServices2  = () => {
                     <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-4 flex justify-center items-center'>
                         <img src={icons1} alt="" />
                     </div>
-                    <h1 className='text-3xl'>Expert Investigator Agents</h1>
+                    <h1 className='text-3xl font-semibold'>Expert Investigator Agents</h1>
                 </div>
                 <div className='bg-white shadow-xl w-[250px] h-[300px] px-10 text-center  '>
                     <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-4 flex justify-center items-center'>
                     <img src={icons2} alt="" />
                     </div>
-                    <h1 className='text-3xl'>Expert Investigator Agents</h1>
+                    <h1 className='text-3xl font-semibold'>Expert Investigator Agents</h1>
                 </div>
                </div>
                 <div className='bg-white shadow-xl w-[250px] h-[300px] px-10 text-center ms-10 mt-36'>
                     <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-10 flex justify-center items-center'>
                     <img src={icons3} alt="" />
                     </div>
-                    <h1 className='text-3xl'>Expert Investigator Agents</h1>
+                    <h1 className='text-3xl font-semibold'>Expert Investigator Agents</h1>
                 </div>
             </div>
               
