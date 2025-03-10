@@ -11,8 +11,8 @@ import testimonial1 from '../../Images/Home/testimonial1.jpg'
 
 const HomeTestimonials = () => {
   return (
-    <div className='w-full h-screen my-20 flex items-center'>
-      <div className='ms-32 w-1/2'>
+    <div className='w-full h-screen my-20 flex items-center justify-between'>
+      <div className='ms-32 w-[40%]'>
         <h1 className='text-xl text-secondary font-semibold'>Our Testimonals</h1>
                    <Swiper
                         modules={[Autoplay, Navigation, Pagination]}
@@ -42,8 +42,8 @@ const HomeTestimonials = () => {
                         
                     </Swiper>
       </div>
-      <div className='me-32 w-1/2 relative' >
-      <img src={aboutThumb} alt="" className='absolute -top-14 -left-10 -z-50'/>
+      <div className='me-32 w-1/3 relative' >
+      <img src={aboutThumb} alt="" className='absolute -top-14 -left-10 -z-50 animate-animationRotate'/>
         <div className='relative w-full h-full'>
             <img src={testimonial1} alt="" className='w-full h-full'/>
             <div className='bg-red-100 w-full h-full absolute top-10 -right-10 -z-50'></div>

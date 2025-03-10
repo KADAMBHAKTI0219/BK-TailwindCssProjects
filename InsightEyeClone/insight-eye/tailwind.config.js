@@ -24,14 +24,30 @@ export default {
       },
       width:{
         cardWidth:'420px',
-        dashedRound:'700px',
+        dashedRound:'650px',
         dasedShortRound:'500px',
         colourCircle:'250px'
       },
       height:{
-        dashedRound:'700px',
+        dashedRound:'650px',
         dasedShortRound:'500px',
         colourCircle:'250px'
+      },
+      animation:{
+        animationScale:'animationScale 3s linear infinite',
+        animationRotate:'animationRotate 10s linear infinite',
+        
+      },
+      keyframes:{
+        animationScale:{
+          '0%, 100%': { transform: 'scale(1.1)' },
+          '50%':{transform:'scale(1)'}
+        },
+        animationRotate:{
+          '0%': { transform: 'rotate(0deg)' },
+          '50%':{transform :'rotate(180deg)'},
+          '100%':{transform :'rotate(360deg)'}
+        }
       }
     },
   },

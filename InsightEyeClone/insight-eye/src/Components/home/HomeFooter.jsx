@@ -5,11 +5,11 @@ import {footer} from '../../data/common'
 
 const HomeFooter = () => {
   return (
-    <div className='w-full h-full'>
-      <div className='w-full relative'>
-            <img src={footerBg} alt="" className='w-full '/>
+    <div className='w-full'>
+      <div className='w-full relative h-96'>
+            <img src={footerBg} alt="" className='w-full  h-full'/>
             <div className=' bg-gradient-to-l from-black via-transparent to-black  absolute top-0 w-full h-full'></div>
-            <div className='flex justify-between  absolute top-0 text-white p-12 px-20'>
+            <div className='flex justify-between  absolute top-0 text-white py-14 px-32'>
                 <div className='space-y-6 w-1/4'>
                     <img src={footer.companyLogo} alt="" className='h-14 p-2'/>
                     <p clas>{footer.description}</p>
@@ -51,7 +51,7 @@ const HomeFooter = () => {
                 </div>
             </div>
       </div>
-      <div className='h-full w-full p-8 bg-gradient-to-r from-black to-black'>
+      <div className='w-full p-8 bg-gradient-to-r from-black to-black'>
             <h1 className='text-xl text-center text-white'>{copyRight}</h1>
       </div>
     </div>

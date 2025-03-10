@@ -39,11 +39,11 @@ const HomeVideo = () => {
             <div className='max-w-7xl  m-auto  bg-white shadow-lg'>
                 <div className='flex justify-around w-full h-full'>
                     {homeVideoData.map((data,index) => (
-                        <div className='flex items-center  w-1/3 drop-shadow-2xl shadow-lg px-4 py-16' key={index}>
-                            <span className='text-4xl text-secondary mx-10  p-4 bg-white hover:text-white hover:bg-customGradient rounded-full border-2'>{data.image}</span>
+                        <div className='flex items-center  w-1/3  shadow-lg px-4 py-16' key={index}>
+                            <span className='text-5xl text-secondary mx-10  p-4  hover:text-white hover:bg-customGradient rounded-full bg-red-100'>{data.image}</span>
                             <div>
-                                <h1 className='font-bold text-4xl'>{data.time}</h1>
-                                <p className='text-xl'>{data.description}</p>
+                                <h1 className='font-bold text-5xl'>{data.time}</h1>
+                                <p className='text-2xl font-semibold py-2'>{data.description}</p>
                             </div>
                         </div>
                   ))}

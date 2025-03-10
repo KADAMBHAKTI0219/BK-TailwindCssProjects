@@ -4,6 +4,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
 import { LogoImageSlider } from "../../data/home";
 
 const LogoSlider = () => {
@@ -19,7 +20,7 @@ const LogoSlider = () => {
         breakpoints={{
           640: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
+          1024: { slidesPerView: 5 },
           1280: { slidesPerView: 5 },
         }}
       >
@@ -29,7 +30,7 @@ const LogoSlider = () => {
               <img
                 src={slide.image}
                 alt={slide.name || `Logo ${slide.id}`}
-                className="h-24 w-36 object-contain max-w-full max-h-full"
+                className="h-32 w-40 object-contain max-w-full max-h-full"
               />
             </div>
           </SwiperSlide>

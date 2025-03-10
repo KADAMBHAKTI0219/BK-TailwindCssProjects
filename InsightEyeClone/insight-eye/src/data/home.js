@@ -91,7 +91,11 @@ export const LogoImageSlider = [
     },   {
         id:5,
         image: logo5
-    }
+    },
+    {
+        id:6,
+        image: logo3
+    },
 ]
 
 
