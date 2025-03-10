@@ -38,7 +38,7 @@ const Navbar = () => {
             </div>
       </div>
 
-      <div className="border-b-2 bg-white w-full h-24 flex items-center justify-between sticky top-0 z-50">
+      <div className="border-b-2 bg-white w-full h-24 flex items-center justify-between sticky top-0 z-10">
         <div className="w-[400px] bg-red-100 h-full absolute top-0 left-0 flex justify-between"></div>
           <div className="flex items-center h-full bg-white rounded-s-[40px] w-[100px] absolute top-0 left-[364px]  "></div>
             <div className="flex justify-between absolute top-5 px-16 w-full">

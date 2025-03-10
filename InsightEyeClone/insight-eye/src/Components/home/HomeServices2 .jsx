@@ -2,6 +2,10 @@ import React from 'react'
 import aboutThumb from '../../Images/Home/aboutThumb.png'
 import {homeService2} from '../../data/common'
 import Button from '../../cva/Button'
+import icons1 from '../../Images/Home/icons1.svg'
+import icons2 from '../../Images/Home/icons2.svg'
+import icons3 from '../../Images/Home/icons3.svg'
+
 
 const HomeServices2  = () => {
   return (
@@ -33,16 +37,24 @@ const HomeServices2  = () => {
             
             <div className='ms-32 -mt-20'>
             <div className="grid grid-cols-2 grid-rows-2">
-            <div className='bg-white shadow-xl w-[250px] h-[300px] px-10 text-center'>
-                    <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-10'></div>
+               <div>
+               <div className='bg-white shadow-xl w-[250px] h-[300px] px-10 text-center -mt-6'>
+                    <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-4 flex justify-center items-center'>
+                        <img src={icons1} alt="" />
+                    </div>
                     <h1 className='text-3xl'>Expert Investigator Agents</h1>
                 </div>
-                <div className='bg-white shadow-xl w-[250px] h-[300px] px-10 text-center mt-32 ms-10 mb-0'>
-                    <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-10'></div>
+                <div className='bg-white shadow-xl w-[250px] h-[300px] px-10 text-center  '>
+                    <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-4 flex justify-center items-center'>
+                    <img src={icons2} alt="" />
+                    </div>
                     <h1 className='text-3xl'>Expert Investigator Agents</h1>
                 </div>
-                <div className='bg-white shadow-xl w-[250px] h-[300px] px-10 text-center'>
-                    <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-10'></div>
+               </div>
+                <div className='bg-white shadow-xl w-[250px] h-[300px] px-10 text-center ms-10 mt-36'>
+                    <div className='w-20 h-20 bg-red-200 rounded-full mx-auto my-10 flex justify-center items-center'>
+                    <img src={icons3} alt="" />
+                    </div>
                     <h1 className='text-3xl'>Expert Investigator Agents</h1>
                 </div>
             </div>

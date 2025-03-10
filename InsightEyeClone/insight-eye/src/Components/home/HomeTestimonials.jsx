@@ -11,7 +11,7 @@ import testimonial1 from '../../Images/Home/testimonial1.jpg'
 
 const HomeTestimonials = () => {
   return (
-    <div className='w-full h-screen my-28 flex items-center'>
+    <div className='w-full h-screen my-20 flex items-center'>
       <div className='ms-32 w-1/2'>
         <h1 className='text-xl text-secondary font-semibold'>Our Testimonals</h1>
                    <Swiper

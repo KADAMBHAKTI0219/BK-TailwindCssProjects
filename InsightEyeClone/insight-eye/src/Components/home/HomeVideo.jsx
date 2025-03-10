@@ -32,7 +32,7 @@ const HomeVideo = () => {
         <img src={videoBg} alt="" className='w-full h-full'/>
         <div className='w-full h-full   bg-opacity-65 absolute top-0 bg-gradient-to-r from-black via-transparent to-black'></div>
         <div className='absolute top-1/4 left-1/2'>
-          <Button variant="roundedButton" size="roundSm"><span className='text-5xl'><RiPlayLargeLine /></span></Button>
+          <Button variant="roundedButton" size="roundLg"><span className='text-5xl'><RiPlayLargeLine /></span></Button>
         </div>
         <h1 className='font-blackops text-7xl text-white absolute top-1/2 left-96 w-1/2 text-center'>Watch Our Private Investigation</h1>
         <div className='absolute -bottom-64 left-0 w-full h-1/2 z-50'>

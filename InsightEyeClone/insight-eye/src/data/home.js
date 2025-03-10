@@ -12,6 +12,13 @@ import  icons1 from '../Images/Home/icons1.svg'
 import icons2 from '../Images/Home/icons2.svg'
 import icons3 from '../Images/Home/icons3.svg'
 import author1 from '../Images/Home/author1.png'
+import team1 from '../Images/Home/team1.jpg'
+import team2 from '../Images/Home/team2.jpg'
+import team3 from '../Images/Home/team3.jpg'
+import news1 from '../Images/Home/news1.jpg'
+import news2 from '../Images/Home/news2.jpg'
+import news3 from '../Images/Home/news3.jpg'
+
 
 
 
@@ -122,3 +129,71 @@ export const homeTestimonial = [
         description:"“The private investigator should provide value for the client investment. They should be cost-effective and efficient.”"
     }
 ]
+
+export const investigators = [
+    {
+        id:1,
+        name: 'Marvin McKiney',
+        image: team1,
+        designation: 'Founder',
+    },
+    {
+        id:2,
+        name: 'Albert Fores',
+        image: team2,
+        designation: 'Manager',
+    },
+    {
+        id:3,
+        name: 'Annette Black',
+        image: team3,
+        designation: 'Investigator',
+    }
+]
+
+export const accordionData = [
+    {
+        id:1,
+        title:'Quick Response',
+        description:'Sodales posuere facilisi metus elementum ipsum egestas amet amet mattis commodo Nunc tempor amet massa diam mauris Risus sodales interdum.'
+    },
+    {
+        id:2,
+        title:'Experience Consultant',
+        description:'Sodales posuere facilisi metus elementum ipsum egestas amet amet mattis commodo Nunc tempor amet massa diam mauris Risus sodales interdum.'
+    },
+    {
+        id:3,
+        title:'Flexible Payment',
+        description:'Sodales posuere facilisi metus elementum ipsum egestas amet amet mattis commodo Nunc tempor amet massa diam mauris Risus sodales interdum.'
+    }
+]
+
+
+export const newsDetails = [
+    {
+        id:1,
+        newsTitle:'How to Manage Risk Monitoring Security',
+        newsDetails:'Amet minim mollit no duis sit enim aliqua dolor do amet officia.',
+        newsDate:'16 Apr',
+        newsImage:news1,
+        newsCmnts:'0 Cmnts'
+    },
+    {
+        id:2,
+        newsTitle:'Famous Cases Solved by Private Investigators',
+        newsDetails:'Amet minim mollit no duis sit enim aliqua dolor do amet officia.',
+        newsDate:'14 Apr',
+        newsImage:news2,
+        newsCmnts:'3 Cmnts'
+    },
+    {
+        id:3,
+        newsTitle:'How Private Investigators Conduct Surveillance',
+        newsDetails:'Amet minim mollit no duis sit enim aliqua dolor do amet officia.',
+        newsDate:'13 Apr',
+        newsImage:news3,
+        newsCmnts:'5 Cmnts'
+    }
+]
+

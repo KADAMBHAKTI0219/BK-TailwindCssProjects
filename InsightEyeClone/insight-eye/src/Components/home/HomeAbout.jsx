@@ -38,7 +38,7 @@ const HomeAbout = () => {
           
         </div>
 
-        <Button variant="primary" size="md">Conatct Us</Button>
+        <Button variant="primary" size="md">Contact Us</Button>
 
       </div>
     </div>

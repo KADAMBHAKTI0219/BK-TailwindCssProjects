@@ -20,7 +20,7 @@ export default {
       },
       backgroundImage:{
         customGradient : 'linear-gradient(90deg, #fd225c 1.12%, #fe7a40);',
-        customGradient2 : 'linear-gradient(90deg, #fe7a40 1.12%, #fd225c);',
+        customGradient2 : 'linear-gradient(90deg, #fe7a40 1.12%, #fd225c);'
       },
       width:{
         cardWidth:'420px',

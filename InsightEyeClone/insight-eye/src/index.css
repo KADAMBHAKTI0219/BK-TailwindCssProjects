@@ -6,7 +6,7 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
-
+@import "./node_modules/preline/variants.css";
 @font-face {
     font-family: 'BlackOpsOne-Regular';
     src: url('/fonts/BlackOpsOne-Regular.ttf') format('truetype');
@@ -84,4 +84,11 @@
 
   .font-ubuntu {
     font-family: 'Ubuntu', sans-serif;
+  }
+
+  @layer base {
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+      cursor: pointer;
+    }
   }
